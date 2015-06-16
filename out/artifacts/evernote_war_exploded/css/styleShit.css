@@ -1,3 +1,16 @@
 .hello {
+    font-family: 'Aliquam';
     text-align: center;
+    color: #413a5d;
+    margin-top: 9%;
+}
+.form{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.link {
+    text-align: center;
+}
+.textH5 {
+    color: #413a5d;
 }
