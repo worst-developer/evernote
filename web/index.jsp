@@ -13,6 +13,7 @@
     <title></title>
   </head>
         <body>
+        <form method="post" action="login.jsp">
         <div class="col-lg-12 col-md-12">
           <div class="form">
               <div class="hello">
@@ -22,18 +23,19 @@
               <form>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                  <input type="email" name="userEmail" value="" class="form-control" id="exampleInputEmail1" placeholder="Email">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <input type="password" name="userPass" value="" class="form-control" id="exampleInputPassword1" placeholder="Password">
                 </div>
-                <button type="submit" id="btnSubmit" class="btn-block btn-lg btn btn-success">Submit</button>
+                <button type="submit" id="btnSubmit" value="Submit" class="btn-block btn-lg btn btn-success">Submit</button>
               </form>
             <div class="link">
               <a href="createAccount.jsp"><h5>Create Account</h5></a>
             </div>
           </div>
             </div>
+            </form>
         </body>
 </html>
