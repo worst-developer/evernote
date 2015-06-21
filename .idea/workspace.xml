@@ -80,8 +80,8 @@
           <file leaf-file-name="userNotes.jsp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/userNotes.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.37748346" vertical-offset="0" max-vertical-offset="755">
-                  <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+                <state vertical-scroll-proportion="0.7152318" vertical-offset="0" max-vertical-offset="755">
+                  <caret line="36" column="67" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
                   <folding />
                 </state>
               </provider>
@@ -141,8 +141,8 @@
           <file leaf-file-name="styleShit.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/css/styleShit.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.28883183" vertical-offset="0" max-vertical-offset="779">
-                  <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+                <state vertical-scroll-proportion="0.3465982" vertical-offset="0" max-vertical-offset="779">
+                  <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -155,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/css/styleShit.css" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/userNotes.jsp" />
@@ -169,6 +168,7 @@
         <option value="db-console:/f34d2baa/456dba32-b01f-42fb-af42-1754883ade8e/" />
         <option value="$PROJECT_DIR$/web/createAccount.jsp" />
         <option value="$PROJECT_DIR$/web/registration.jsp" />
+        <option value="$PROJECT_DIR$/web/css/styleShit.css" />
         <option value="$PROJECT_DIR$/web/userNotes.jsp" />
       </list>
     </option>
@@ -683,12 +683,12 @@
       <workItem from="1434474117318" duration="3319000" />
       <workItem from="1434490345619" duration="306000" />
       <workItem from="1434646959475" duration="1105000" />
-      <workItem from="1434745132188" duration="32264000" />
+      <workItem from="1434745132188" duration="34177000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38031000" />
+    <option name="totallyTimeSpent" value="39944000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -970,29 +970,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/styleShit.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28883183" vertical-offset="0" max-vertical-offset="779">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/createAccount.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="690">
           <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="585">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding>
-            <marker date="1434837776000" expanded="true" signature="707:791" placeholder="SELECT * FRO..members..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1030,6 +1012,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="585">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <marker date="1434837776000" expanded="true" signature="707:791" placeholder="SELECT * FRO..members..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="705">
@@ -1038,10 +1030,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/styleShit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3465982" vertical-offset="0" max-vertical-offset="779">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/userNotes.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37748346" vertical-offset="0" max-vertical-offset="755">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.7152318" vertical-offset="0" max-vertical-offset="755">
+          <caret line="36" column="67" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
           <folding />
         </state>
       </provider>

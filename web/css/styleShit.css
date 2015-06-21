@@ -14,3 +14,6 @@
 .textH5 {
     color: #413a5d;
 }
+.form-control{
+    max-width: 10px;
+}
