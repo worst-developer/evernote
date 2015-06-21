@@ -10,8 +10,8 @@
          import="javax.servlet.*"
          import="java.io.*" %>
 <%
-  PrintWriter outt = response.getWriter();
-  String userid = request.getParameter("userEmail");
+  PrintWriter writer = response.getWriter();
+  String userEmail = request.getParameter("userEmail");
   String pwd = request.getParameter("userPass");
   try {
     Class.forName("com.mysql.jdbc.Driver");
@@ -19,18 +19,16 @@
             "evernoteDB", "0633739768z");
     Statement st = con.createStatement();
     ResultSet rs;
-    rs = st.executeQuery("select * from members where userEmail='" + userid + "' and userPass='" + pwd + "'");
-
+    rs = st.executeQuery("SELECT * FROM members WHERE userEmail='" + userEmail + "' AND userPass='" + pwd + "'");
     if (rs.next()) {
-      session.setAttribute("userid", userid);
-      out.println("welcome " + userid);
-      //out.println("<a href='logout.jsp'>Log out</a>");
+      request.setAttribute("userEmail", userEmail);
+      writer.println("welcome " + userEmail);
+      //writer.println("<a href='logout.jsp'>Log out</a>");
       response.sendRedirect("userNotes.jsp");
     } else {
-      outt.println("Invalid password <a href='index.jsp'>try again</a>");
+      writer.println("Invalid password <a href='index.jsp'>try again</a>");
     }
-  } catch (Exception ex) {
-    outt.println("erorr");
+  } catch (SQLException e) {
+    writer.println("error");
   }
-
 %>

@@ -13,7 +13,7 @@
     <title></title>
 </head>
         <body>
-          <form method="post" action="">
+          <form method="post" action="registration.jsp">
               <div class="col-lg-12 col-md-12">
                 <div class="form">
                   <div class="hello">
@@ -28,7 +28,7 @@
                           <label for="exampleInputPassword1">Password</label>
                           <input type="password" name="userPass" value="" class="form-control" id="exampleInputPassword1" placeholder="Password">
                         </div>
-                        <button type="submit" id="btnSubmit" class="btn-block btn-lg btn btn-success">Create Account</button>
+                        <button type="submit" value="Submit" id="btnSubmit" class="btn-block btn-lg btn btn-success">Create Account</button>
                       </form>
                   <div class="link">
                     <a href="index.jsp"><h5 class="textH5">Sign in</h5></a>

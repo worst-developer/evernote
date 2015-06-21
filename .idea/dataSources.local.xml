@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="MySQL - evernoteDB@localhost" uuid="bbc2fc69-b5f5-4e65-83b2-779ba2a7658a">
+    <data-source name="MySQL - evernoteDB@localhost" uuid="456dba32-b01f-42fb-af42-1754883ade8e">
       <secret-storage>master_key</secret-storage>
       <user-name>evernoteDB</user-name>
-      <schema-pattern>test.*</schema-pattern>
-      <default-schemas>test.*</default-schemas>
+      <schema-pattern>evernoteDB.*</schema-pattern>
+      <default-schemas>evernoteDB.*</default-schemas>
     </data-source>
   </component>
 </project>

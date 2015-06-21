@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source name="MySQL - evernoteDB@localhost" uuid="bbc2fc69-b5f5-4e65-83b2-779ba2a7658a">
+  <data-source name="MySQL - evernoteDB@localhost" uuid="456dba32-b01f-42fb-af42-1754883ade8e">
     <database-info product="MySQL" version="5.6.25" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
       <extra-name-characters>#@</extra-name-characters>
       <identifier-quote-string>`</identifier-quote-string>
     </database-info>
     <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
-    <schema name="" catalog="test"/>
+    <schema name="" catalog="evernoteDB"/>
+    <table name="members" schema="" catalog="evernoteDB" type="TABLE">
+      <column name="userEmail" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="userPass" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+    </table>
   </data-source>
 </component>

@@ -8,9 +8,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <title></title>
-</head>
-<body>
-  <h1>Success!!!</h1>
-</body>
-</html>
+          </head>
+                <body>
+                <table class="table table-striped">
+                  <tr>
+                    <td>name</td>
+                    <td>surname</td>
+                    <td>surname1</td>
+                  </tr>
+                </table>
+
+
+                </body>
+          </html>
