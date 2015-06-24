@@ -14,7 +14,7 @@
   </head>
         <body>
         <form method="post" action="login.jsp">
-        <div class="col-lg-12 col-md-12">
+        <div class="col-md-12">
           <div class="form">
               <div class="hello">
                   <h1>Sign in</h1>
@@ -22,6 +22,7 @@
 
               <form>
                 <div class="form-group">
+
                   <label for="exampleInputEmail1">Email address</label>
                   <input type="email" name="userEmail" value="" class="form-control" id="exampleInputEmail1" placeholder="Email">
                 </div>

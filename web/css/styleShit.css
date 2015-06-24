@@ -14,6 +14,7 @@
 .textH5 {
     color: #413a5d;
 }
-.form-control{
-    max-width: 10px;
+.dropdownButton{
+    left: 30%;
+    right: auto;
 }
