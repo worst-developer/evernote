@@ -11,5 +11,9 @@
       <column name="userEmail" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
       <column name="userPass" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
     </table>
+    <table name="note" schema="" catalog="evernoteDB" type="TABLE">
+      <column name="noteName" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="note" sqlType="VARCHAR" precision="1000" scale="0" nullable="false" jdbcType="12"/>
+    </table>
   </data-source>
 </component>

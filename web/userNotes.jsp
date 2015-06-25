@@ -15,7 +15,7 @@
     <title>Profile</title>
           </head>
                 <body>
-
+                        <form method="post" action="newNote.jsp">
                         <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bs-example-modal-lg">CREATE NEW NOTE</button>
 
                         <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
@@ -25,7 +25,7 @@
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             <h5>new note</h5>
-                                        <input type="text" class="form-control" placeholder="type note header">
+                                        <input type="text" class="form-control" name="noteName" value="" placeholder="type note header">
                                     </div>
 
                                     <div class="modal-body">
@@ -43,11 +43,11 @@
                                                          <li role="presentation" class="divider"></li>
                                                 </ul>
 
-                                        <textarea style="display: none" class="form-control" rows="5" id="textArea"></textarea>
+                                        <textarea style="display: none" type="text" class="form-control" rows="5" id="textArea" name="note" value=""></textarea>
                                     </div>
 
                                     <div class="modal-footer">
-                                        <button class="btn btn-success" type="SUBMIT">Save</button>
+                                        <button class="btn btn-success">Save</button>
                                     </div>
 
                                 </div>
@@ -78,6 +78,6 @@
                 <textarea class="form-control" rows="3"></textarea>
 
                 <a href="index.jsp"<button type="button" class="btn btn-danger">Logout</button> </a>
-
+                        </form>
                 </body>
           </html>
