@@ -15,11 +15,8 @@
 
     Statement st = con.createStatement();
 
-    int i = st.executeUpdate("INSERT INTO note (noteName, note) VALUES ('" + noteName + "','" + note + "')");
+    st.executeUpdate("INSERT INTO note (noteName, note) VALUES ('" + noteName + "','" + note + "')");
 
-    if (i > 0) {
-      writer.print("Registration Successfull!");
-    }
       }
       catch(ClassNotFoundException e){
         writer.println("Couldn't load database driver: " + e.getMessage());

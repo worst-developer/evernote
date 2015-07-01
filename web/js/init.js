@@ -21,3 +21,11 @@
             }
         });
     })();
+
+    function deleteRow(r) {
+        var i = r.parentNode.parentNode.rowIndex;
+        if (confirm("Do u want to delete this note? ") == true) {
+            document.getElementById("notes").deleteRow(i);
+        }
+        //document.getElementById("deleteNote");
+    }

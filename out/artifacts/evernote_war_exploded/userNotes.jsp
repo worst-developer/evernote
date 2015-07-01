@@ -13,6 +13,10 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/init.js"></script>
     <title>Profile</title>
+
+    <%@ page import ="java.sql.*"
+             import="java.io.*" %>
+
           </head>
                 <body>
                         <form method="post" action="newNote.jsp">
@@ -31,7 +35,7 @@
                                     <div class="modal-body">
                                             <h4>Chose note type:</h4>
 
-                                        <button id="dropdownButton" class="btn btn-default dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Dropdown Example
+                                        <button id="dropdownButton" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
                                             <span class="caret"></span></button>
 
                                                 <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
@@ -47,35 +51,66 @@
                                     </div>
 
                                     <div class="modal-footer">
-                                        <button class="btn btn-success">Save</button>
+                                        <button class="btn btn-success" type="submit">Save</button>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
-                <table class="table table-striped">
-                  <tr>
-                      <td>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                          </label>
-                        </div>
-                      </td>
+                            <table id="notes" border="2">
+                                <tr>
 
-                    <td>
-                      <select class="form-control">
-                        <option>встеча</option>
-                        <option>напоминание</option>
-                        <option>заметка</option>
-                      </select>
-                    </td>
+                                    <td>note name</td>
+                                    <td>note</td>
 
-                    <td>surname</td>
-                    <td>время</td>
-                  </tr>
-                </table>
-                <textarea class="form-control" rows="3"></textarea>
+                                </tr>
+                                <%
+                                    PrintWriter writer = response.getWriter();
+                                    try {
+                                        Class.forName("com.mysql.jdbc.Driver");
+                                        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/evernoteDB",
+                                                "evernoteDB", "0633739768z");
+
+                                        Statement st = con.createStatement();
+                                        ResultSet rs;
+                                        rs = st.executeQuery("SELECT * FROM note");
+
+                                        while (rs.next())
+                                        {
+                                %>
+                                <tr>
+                                    <td><%=rs.getString("noteName") %></td>
+                                    <td><%=rs.getString("note") %></td>
+                                    <td><button onclick="deleteRow(this)"
+                                            <%
+                                        Statement state = con.createStatement();
+                                        state.executeUpdate("DELETE * FROM note");
+                                            %>
+                                        type="button" class="close" data-dismiss="modal" id="deleteNote">&times;</button></td>
+                                </tr>
+                                <%
+
+                                        }
+                                        rs.close();
+                                        st.close();
+                                        con.close();
+                                    }
+                                    catch(ClassNotFoundException e)
+                                    {
+                                        writer.println("Couldn't load database driver: " + e.getMessage());
+                                    }
+                                    catch(SQLException e)
+                                    {
+                                        writer.println("SQLException caught: " + e.getMessage());
+                                    }
+                                    catch (Exception e)
+                                    {
+                                        writer.println(e);
+                                    }
+
+                                %>
+                            </table>
+
 
                 <a href="index.jsp"<button type="button" class="btn btn-danger">Logout</button> </a>
                         </form>

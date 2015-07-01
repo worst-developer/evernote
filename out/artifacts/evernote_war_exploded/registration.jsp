@@ -29,13 +29,13 @@
 //        }
 
         int i = st.executeUpdate("INSERT INTO members (userEmail, userPass) VALUES ('" + user + "','" + pwd + "')");
-
-        if (i > 0) {
-            //session.setAttribute("userid", user);
-            writer.print("Registration Successfull!");
-        } else {
-            response.sendRedirect("index.jsp");
-        }
+//
+//        if (i > 0) {
+//            //session.setAttribute("userid", user);
+//            writer.print("Registration Successfull!");
+//        } else {
+//            response.sendRedirect("index.jsp");
+//        }
 
     }
     catch(ClassNotFoundException e){
