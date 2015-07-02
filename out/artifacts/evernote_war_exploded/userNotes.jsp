@@ -61,7 +61,7 @@
                                 <tr>
 
                                     <td>note name</td>
-                                    < td>note</td>
+                                    <td>note</td>
 
                                 </tr>
                                 <%
@@ -81,12 +81,7 @@
                                 <tr>
                                     <td><%=rs.getString("noteName") %></td>
                                     <td><%=rs.getString("note") %></td>
-                                    <td><button onclick="deleteRow(this)"
-                                            <%
-                                        Statement state = con.createStatement();
-                                        state.executeUpdate("DELETE * FROM note");
-                                            %>
-                                        type="button" class="close" data-dismiss="modal" id="deleteNote">&times;</button></td>
+                                    <td><button onclick="deleteRow(this)" type="button" class="close" data-dismiss="modal" id="deleteNote">&times;</button></td>
                                 </tr>
                                 <%
 
