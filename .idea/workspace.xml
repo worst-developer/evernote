@@ -86,11 +86,10 @@
           <file leaf-file-name="userNotes.jsp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/userNotes.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.63064295" vertical-offset="1033" max-vertical-offset="2232">
-                  <caret line="83" column="73" selection-start-line="83" selection-start-column="73" selection-end-line="83" selection-end-column="73" />
+                <state vertical-scroll-proportion="0.4446461" vertical-offset="1249" max-vertical-offset="2142">
+                  <caret line="83" column="74" selection-start-line="83" selection-start-column="74" selection-end-line="83" selection-end-column="74" />
                   <folding>
-                    <marker date="1435745680000" expanded="true" signature="4176:4194" placeholder="SELECT * FRO..note..." />
-                    <marker date="1435745680000" expanded="true" signature="4782:4800" placeholder="DELETE * FRO..." />
+                    <marker date="1435839806000" expanded="true" signature="4177:4195" placeholder="SELECT * FRO..note..." />
                   </folding>
                 </state>
               </provider>
@@ -128,7 +127,7 @@
           <file leaf-file-name="init.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/js/init.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.61741424" vertical-offset="0" max-vertical-offset="758">
+                <state vertical-scroll-proportion="0.80968857" vertical-offset="0" max-vertical-offset="666">
                   <caret line="26" column="65" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
                   <folding />
                 </state>
@@ -175,10 +174,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
-    <option name="y" value="-180" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -717,12 +714,12 @@
       <workItem from="1434967452046" duration="593000" />
       <workItem from="1435142396632" duration="6587000" />
       <workItem from="1435250145940" duration="6180000" />
-      <workItem from="1435704777186" duration="13243000" />
+      <workItem from="1435704777186" duration="15417000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66547000" />
+    <option name="totallyTimeSpent" value="68721000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -745,7 +742,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="-180" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -768,9 +765,9 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969216" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2368932" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28705883" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16683218" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.096354164" sideWeight="0.936803" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12847222" sideWeight="0.936803" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1" sideWeight="0.063197024" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -891,8 +888,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="295" max-vertical-offset="1335">
           <caret line="48" column="62" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
           <folding>
-            <marker date="1435745680000" expanded="true" signature="4176:4194" placeholder="SELECT * FRO..note..." />
-            <marker date="1435745680000" expanded="true" signature="4782:4800" placeholder="DELETE * FRO..." />
+            <marker date="1435839806000" expanded="true" signature="4177:4195" placeholder="SELECT * FRO..note..." />
           </folding>
         </state>
       </provider>
@@ -952,8 +948,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="720">
           <caret line="36" column="67" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
           <folding>
-            <marker date="1435745680000" expanded="true" signature="4176:4194" placeholder="SELECT * FRO..note..." />
-            <marker date="1435745680000" expanded="true" signature="4782:4800" placeholder="DELETE * FRO..." />
+            <marker date="1435839806000" expanded="true" signature="4177:4195" placeholder="SELECT * FRO..note..." />
           </folding>
         </state>
       </provider>
@@ -1024,8 +1019,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="720">
           <caret line="36" column="67" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
           <folding>
-            <marker date="1435745680000" expanded="true" signature="4176:4194" placeholder="SELECT * FRO..note..." />
-            <marker date="1435745680000" expanded="true" signature="4782:4800" placeholder="DELETE * FRO..." />
+            <marker date="1435839806000" expanded="true" signature="4177:4195" placeholder="SELECT * FRO..note..." />
           </folding>
         </state>
       </provider>
@@ -1272,7 +1266,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/init.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61741424" vertical-offset="0" max-vertical-offset="758">
+        <state vertical-scroll-proportion="0.80968857" vertical-offset="0" max-vertical-offset="666">
           <caret line="26" column="65" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
           <folding />
         </state>
@@ -1280,11 +1274,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/userNotes.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63064295" vertical-offset="1033" max-vertical-offset="2232">
-          <caret line="83" column="73" selection-start-line="83" selection-start-column="73" selection-end-line="83" selection-end-column="73" />
+        <state vertical-scroll-proportion="0.4446461" vertical-offset="1249" max-vertical-offset="2142">
+          <caret line="83" column="74" selection-start-line="83" selection-start-column="74" selection-end-line="83" selection-end-column="74" />
           <folding>
-            <marker date="1435745680000" expanded="true" signature="4176:4194" placeholder="SELECT * FRO..note..." />
-            <marker date="1435745680000" expanded="true" signature="4782:4800" placeholder="DELETE * FRO..." />
+            <marker date="1435839806000" expanded="true" signature="4177:4195" placeholder="SELECT * FRO..note..." />
           </folding>
         </state>
       </provider>
