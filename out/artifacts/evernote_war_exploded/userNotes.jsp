@@ -70,11 +70,10 @@
                         <div id="table">
                             <table id="notes" class="table table-striped">
                                 <tr>
-                                    <td class="checkboxRow"><h5>done:<br>
-                                        <%--<--%поле для приема значений %-->--%>
-                                    </h5></td>
+                                    <td id="checkboxDone"></td>
                                     <td id="noteNameRow">note name</td>
                                     <td>note</td>
+                                    <td>time</td>>
                                     <td></td>
                                 </tr>
                                     <%
@@ -92,9 +91,10 @@
                                                 while (rs.next())
                                                     { %>
                                                         <tr>
-                                                            <td><input type="checkbox" id="checkboxColumn"></td>   <%--поле для взятия значений--%>
+                                                            <td><input type="checkbox"></td>
                                                             <td id="noteName"><%=rs.getString(1) %></td>
                                                             <td><%=rs.getString(2) %></td>
+                                                            <td>time</td>>
                                                             <td id="close">
                                                                 <a href=deleteData?id=<%=rs.getString(1) %>><button onclick="deleteRow()" type="button" class="close" data-dismiss="modal">&times;</button></a>
                                                             </td>
@@ -118,6 +118,7 @@
                                                         writer.println(e);
                                                     }
                                         %>
+
                              </table>
                         </div>
 

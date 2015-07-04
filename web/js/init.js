@@ -21,13 +21,15 @@
             }
         });
     })();
+    function deleteRow () {
+        confirm("Do you want to delete this note?");
+    };
 
+    $(document).ready(function(){
+    var countChecked = function() {
+        var n = $( "input:checked" ).length;
+        $( "#checkboxDone" ).text( n + (n === 1 ? " is" : " are") + " done" );
+    };
+    countChecked();
 
-
-    var inputElems = document.getElementById("#checkboxColumn"),
-        count = 0;
-    for (var i=0; i<inputElems.length; i++) {
-        if (inputElems[i].type === "checkbox" && inputElems[i].checked === true) {
-            count++;
-        }
-    }
+    $( "input[type=checkbox]" ).on( "click", countChecked ); });
