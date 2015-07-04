@@ -22,10 +22,12 @@
         });
     })();
 
-    function deleteRow(r) {
-        var i = r.parentNode.parentNode.rowIndex;
-        if (confirm("Do u want to delete this note? ") == true) {
-            document.getElementById("notes").deleteRow(i);
+
+
+    var inputElems = document.getElementById("#checkboxColumn"),
+        count = 0;
+    for (var i=0; i<inputElems.length; i++) {
+        if (inputElems[i].type === "checkbox" && inputElems[i].checked === true) {
+            count++;
         }
-        //document.getElementById("deleteNote");
     }

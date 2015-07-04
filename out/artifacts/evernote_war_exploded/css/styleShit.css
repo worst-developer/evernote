@@ -11,10 +11,35 @@
 .link {
     text-align: center;
 }
+#btnCreateNewNote{
+    margin-top: 3%;
+    display: block;
+    width: 155px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .textH5 {
     color: #413a5d;
 }
 .dropdownButton{
     left: 30%;
     right: auto;
+}
+#table {
+    margin-top: 3%;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#close {
+    width: 14px;
+}
+#noteName{
+    width: 300px;
+}
+#noteNameRow{
+
+}
+#checkboxRow{
+    width: 100px;
 }
