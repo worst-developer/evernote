@@ -18,7 +18,10 @@
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styleShit.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/init.js"></script>
     <title>Profile</title>
@@ -59,6 +62,21 @@
                                         <textarea style="display: none" type="text" class="form-control" rows="5" id="textArea" name="note" value=""></textarea>
                                     </div>
 
+                                    <div  class="container" >
+                                        <div class="row">
+                                            <div class='col-sm-3'>
+                                                <div class="form-group">
+                                                    <div style="display: none" class='input-group date' id='datetimepicker1'>
+                                                        <input type='text' class="form-control" />
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="modal-footer">
                                         <button class="btn btn-success" type="submit" id="save">Save</button>
                                     </div>
@@ -73,7 +91,7 @@
                                     <td id="checkboxDone"></td>
                                     <td id="noteNameRow">note name</td>
                                     <td>note</td>
-                                    <td>time</td>>
+                                    <td>time</td>
                                     <td></td>
                                 </tr>
                                     <%
@@ -94,7 +112,7 @@
                                                             <td><input type="checkbox"></td>
                                                             <td id="noteName"><%=rs.getString(1) %></td>
                                                             <td><%=rs.getString(2) %></td>
-                                                            <td>time</td>>
+                                                            <td>time</td>
                                                             <td id="close">
                                                                 <a href=deleteData?id=<%=rs.getString(1) %>><button onclick="deleteRow()" type="button" class="close" data-dismiss="modal">&times;</button></a>
                                                             </td>
@@ -121,7 +139,6 @@
 
                              </table>
                         </div>
-
                 <a href="index.jsp"<button type="button" class="btn btn-danger">Logout</button> </a>
                         </form>
                 </body>

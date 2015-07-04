@@ -3,6 +3,7 @@
     $(document).ready(function(){
         $("#note").click(function(){
             $("#textArea").toggle();
+            $("#datetimepicker1").toggle();
         });
     });
 
@@ -33,3 +34,9 @@
     countChecked();
 
     $( "input[type=checkbox]" ).on( "click", countChecked ); });
+
+    $(document).ready(function() {
+        $(function () {
+            $('#datetimepicker1').datetimepicker();
+        });
+    });
