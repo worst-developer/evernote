@@ -21,8 +21,7 @@
 #btnLogout{
     display: block;
     width: 155px;
-    margin-left: auto;
-    margin-right: auto;
+   margin: 0 auto;
 }
 .textH5 {
     color: #413a5d;

@@ -9,6 +9,9 @@
     String updateNote = request.getParameter("updateNote");
     String value = request.getParameter("id");
     String date = request.getParameter("Date");
+    String reminderFrom = request.getParameter("reminderFrom");
+    String reminderTo = request.getParameter("reminderTo");
+
 
     String checkbox = request.getParameter("checkboxList");
     String checkboxValue;
@@ -21,12 +24,16 @@
         Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/evernoteDB",
                 "evernoteDB", "0633739768z");
 
-          String query = "INSERT INTO note (noteName, note, date, checkbox) VALUES (?,?,?,?)";
+          String query = "INSERT INTO note (noteName, note, date, dateTo, checkbox) VALUES (?,?,?,?,?)";
           PreparedStatement statement = con.prepareStatement(query);
           statement.setString(1, noteName);
           statement.setString(2, note);
           statement.setString(3, date);
-          statement.setString(4, checkboxValue);
+
+          statement.setString(3, reminderFrom);
+          statement.setString(4, " - " + reminderTo);
+
+          statement.setString(5, checkboxValue);
           statement.executeUpdate();
 
 //      Statement st = con.createStatement();
