@@ -14,6 +14,7 @@
                 "evernoteDB", "0633739768z");
 
         Statement st = con.createStatement();
+
 //        ResultSet rs;
 //        rs = st.executeQuery("SELECT userEmail FROM members WHERE userEmail = '$user()' ");
 //        if (rs.equals(user))
@@ -27,15 +28,12 @@
 //            rs.close();
 //            writer.print("This name already taken!");
 //        }
+         int i = st.executeUpdate("INSERT INTO members (userEmail, userPass) VALUES ('" + user + "','" + pwd + "')");
 
-        int i = st.executeUpdate("INSERT INTO members (userEmail, userPass) VALUES ('" + user + "','" + pwd + "')");
-//
-//        if (i > 0) {
-//            //session.setAttribute("userid", user);
-//            writer.print("Registration Successfull!");
-//        } else {
-//            response.sendRedirect("index.jsp");
-//        }
+
+        if (i > 0) {
+            response.sendRedirect("index.jsp");
+        }
 
     }
     catch(ClassNotFoundException e){

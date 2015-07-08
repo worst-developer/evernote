@@ -4,8 +4,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.*;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
 
 /**
  * Created by Yaroslav on 7/2/15.
@@ -14,28 +15,31 @@ import java.sql.*;
 public class deleteData extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        PrintWriter out = response.getWriter();
+//        String value = request.getParameter("id");
+            int value = Integer.parseInt(request.getParameter("id"));
 
 
-        String value = request.getParameter("id");
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/evernoteDB",
                     "evernoteDB", "0633739768z");
 
-
             Statement st = conn.createStatement();
+            st.executeUpdate("DELETE FROM note WHERE id = '" + value + "'");
+//
+//            String query = "DELETE FROM note WHERE noteName = ?";
+//            PreparedStatement statement = conn.prepareStatement(query);
+//            statement.setString(1, value);
+//            statement.executeUpdate();
+//            Statement st = conn.createStatement();
+//
+//            st.executeUpdate("DELETE FROM note WHERE noteName='" + value  + "'");
 
-            st.executeUpdate("DELETE FROM note WHERE noteName='" + value + "'");
-            out.print(value);
-                response.sendRedirect("/userNotes.jsp");
+            response.sendRedirect("/userNotes.jsp");
 
             conn.close();
-        }
-        catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 }
-//            String query = "DELETE FROM note WHERE noteName="+value;
-//        int value = Integer.parseInt(request.getParameter("id"));

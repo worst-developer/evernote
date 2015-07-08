@@ -17,6 +17,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styleShit.css">
     <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -66,8 +67,8 @@
                                         <div class="row">
                                             <div class='col-sm-3'>
                                                 <div class="form-group">
-                                                    <div style="display: none" class='input-group date' id='datetimepicker1'>
-                                                        <input type='text' class="form-control" />
+                                                    <div style="display: none" class='input-group date' id="datetimepicker1">
+                                                        <input type='text' class="form-control" name="Date"/>
                                             <span class="input-group-addon">
                                                 <span class="glyphicon glyphicon-calendar"></span>
                                             </span>
@@ -88,7 +89,7 @@
                         <div id="table">
                             <table id="notes" class="table table-striped">
                                 <tr>
-                                    <td id="checkboxDone"></td>
+                                    <td id="checkboxDone" ></td>
                                     <td id="noteNameRow">note name</td>
                                     <td>note</td>
                                     <td>time</td>
@@ -96,32 +97,74 @@
                                 </tr>
                                     <%
                                         PrintWriter writer = response.getWriter();
-    //                                    int id = Integer.parseInt(request.getParameter("r"));
                                         try {
-                                                Class.forName("com.mysql.jdbc.Driver");
-                                                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/evernoteDB",
-                                                        "evernoteDB", "0633739768z");
+                                                    Class.forName("com.mysql.jdbc.Driver");
+                                                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/evernoteDB",
+                                                            "evernoteDB", "0633739768z");
 
-                                                Statement st = con.createStatement();
-                                                ResultSet rs;
-                                                rs = st.executeQuery("SELECT * FROM note");
 
-                                                while (rs.next())
-                                                    { %>
-                                                        <tr>
-                                                            <td><input type="checkbox"></td>
-                                                            <td id="noteName"><%=rs.getString(1) %></td>
-                                                            <td><%=rs.getString(2) %></td>
-                                                            <td>time</td>
-                                                            <td id="close">
-                                                                <a href=deleteData?id=<%=rs.getString(1) %>><button onclick="deleteRow()" type="button" class="close" data-dismiss="modal">&times;</button></a>
-                                                            </td>
-                                                        </tr>
+                                                    Statement st = con.createStatement();
+                                                    ResultSet rs;
+                                                    rs = st.executeQuery("SELECT * FROM note");
+//                                            String query = "SELECT * FROM note";
+//                                            PreparedStatement statement = con.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+//                                            statement.executeUpdate();
 
-                                                    <% }
-                                                rs.close();
-                                                st.close();
-                                                con.close();
+                                                    while (rs.next())
+                                                        { %>
+                                                            <tr>
+                                                                <td><input type="checkbox" name="checkboxList" value="0"></td>
+                                                                <td><%=rs.getString(1) %></td>
+                                                                <td id="noteName"><%=rs.getString(2) %></td>
+                                                                <td ><%=rs.getString(3)%></td>
+                                                                <%--<i class="fa fa-pencil-square-o" data-toggle="modal" data-target=".bs-example-modal-lg"></i>--%>
+                                                                <%--&lt;%&ndash;<td>&ndash;%&gt;--%>
+                                                                    <%--&lt;%&ndash;<a href=deleteData?id=<%=rs.getString(1) %>><button type="button" class="btn btn-success" data-toggle="modal" data-target=".bs-example-modal-lg" id="btnCreateNewNotee">CREATE NEW NOTE</button></a>&ndash;%&gt;--%>
+                                                                <%--&lt;%&ndash;<div class="modal fade bs-example-modal-lg" tabindex="-1">&ndash;%&gt;--%>
+                                                                    <%--&lt;%&ndash;<div class="modal-dialog modal-lg">&ndash;%&gt;--%>
+                                                                        <%--&lt;%&ndash;<div class="modal-content">&ndash;%&gt;--%>
+
+                                                                            <%--&lt;%&ndash;<div class="modal-header">&ndash;%&gt;--%>
+                                                                                <%--&lt;%&ndash;<button type="button" class="close" data-dismiss="modal">&times;</button>&ndash;%&gt;--%>
+                                                                                <%--&lt;%&ndash;<h5>Note Name:</h5>&ndash;%&gt;--%>
+                                                                                <%--&lt;%&ndash;<input type="text" class="form-control" value="<%=rs.getString(1)%>" placeholder="type note header" name="updateNoteName">&ndash;%&gt;--%>
+                                                                            <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+
+                                                                            <%--&lt;%&ndash;<div class="modal-body">&ndash;%&gt;--%>
+                                                                                <%--&lt;%&ndash;<textarea  type="text" class="form-control" rows="5" value="" name="updateNote"><%=rs.getString(2)%></textarea>&ndash;%&gt;--%>
+                                                                            <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+
+                                                                            <%--&lt;%&ndash;<div  class="container" >&ndash;%&gt;--%>
+                                                                                <%--&lt;%&ndash;<div class="row">&ndash;%&gt;--%>
+                                                                                    <%--&lt;%&ndash;<div class='col-sm-3'>&ndash;%&gt;--%>
+                                                                                        <%--&lt;%&ndash;<div class="form-group">&ndash;%&gt;--%>
+                                                                                            <%--&lt;%&ndash;<div style="display: none" class='input-group date'>&ndash;%&gt;--%>
+                                                                                                <%--&lt;%&ndash;<input type='text' class="form-control" />&ndash;%&gt;--%>
+                                                                                                    <%--&lt;%&ndash;<span class="input-group-addon">&ndash;%&gt;--%>
+                                                                                                        <%--&lt;%&ndash;<span class="glyphicon glyphicon-calendar"></span>&ndash;%&gt;--%>
+                                                                                                    <%--&lt;%&ndash;</span>&ndash;%&gt;--%>
+                                                                                            <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+                                                                                        <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+                                                                                    <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+                                                                                <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+                                                                            <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+
+                                                                            <%--&lt;%&ndash;<div class="modal-footer">&ndash;%&gt;--%>
+                                                                                <%--&lt;%&ndash;<button class="btn btn-success" type="submit">Save</button>&ndash;%&gt;--%>
+                                                                            <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+                                                                            <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+                                                                    <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+                                                                <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+                                                                <%--</td>--%>
+                                                                <td id="close">
+                                                                <a href=deleteData?id=<%=rs.getInt(4)%>><button onclick="deleteRow()" type="button" class="close" data-dismiss="modal">&times;</button></a>
+                                                                </td>
+                                                            </tr>
+
+                                                        <% }
+                                                    rs.close();
+                                                    st.close();
+                                                    con.close();
                                             }
                                                 catch(ClassNotFoundException e)
                                                     {
@@ -139,7 +182,7 @@
 
                              </table>
                         </div>
-                <a href="index.jsp"<button type="button" class="btn btn-danger">Logout</button> </a>
+                <a href="index.jsp"<button type="button" class="btn btn-danger" id="btnLogout">Logout</button> </a>
                         </form>
                 </body>
           </html>
