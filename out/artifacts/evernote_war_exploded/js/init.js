@@ -6,7 +6,12 @@
             $("#datetimepicker1").toggle();
         });
     });
-
+    $(document).ready(function(){
+        $("#meeting").click(function(){
+            $("#textArea").toggle();
+            $("#datetimepicker1").toggle();
+        });
+    });
     $(document).ready(function(){
         $("#reminder").click(function(){
             $("#textArea").toggle();

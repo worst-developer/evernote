@@ -23,12 +23,23 @@
     width: 155px;
    margin: 0 auto;
 }
+#btnDelete{
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3% ;
+}
 .textH5 {
     color: #413a5d;
+}
+#textArea {
+    margin-top: 1px;
 }
 .dropdownButton{
     left: 30%;
     right: auto;
+
 }
 #table {
     margin-top: 3%;

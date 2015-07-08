@@ -67,14 +67,14 @@
     <favorites_list name="evernote" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7289562">
+    <splitter split-orientation="horizontal" split-proportion="0.73333335">
       <split-first>
         <leaf>
-          <file leaf-file-name="styleShit.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="styleShit.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/css/styleShit.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="936">
-                  <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+                <state vertical-scroll-proportion="0.75735295" vertical-offset="246" max-vertical-offset="1134">
+                  <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -83,7 +83,7 @@
           <file leaf-file-name="newNote.jsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/newNote.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-9.222222" vertical-offset="345" max-vertical-offset="1134">
+                <state vertical-scroll-proportion="-22.0" vertical-offset="0" max-vertical-offset="1134">
                   <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
                   <folding>
                     <marker date="1436356286000" expanded="true" signature="1039:1115" placeholder="INSERT INTO ..." />
@@ -95,24 +95,30 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="userNotes.jsp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="userNotes.jsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/userNotes.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.15589353" vertical-offset="2469" max-vertical-offset="3942">
-                  <caret line="144" column="67" selection-start-line="144" selection-start-column="67" selection-end-line="144" selection-end-column="165" />
+                <state vertical-scroll-proportion="-16.555555" vertical-offset="777" max-vertical-offset="4104">
+                  <caret line="68" column="121" selection-start-line="68" selection-start-column="121" selection-end-line="68" selection-end-column="121" />
                   <folding>
-                    <marker date="1436357419000" expanded="true" signature="8070:8088" placeholder="SELECT * FRO..note..." />
-                    <marker date="1436357419000" expanded="true" signature="8154:8172" placeholder="SELECT * FRO..note..." />
+                    <marker date="1436359516000" expanded="true" signature="8289:8310" placeholder="SELECT * FRO..members..." />
+                    <marker date="1436359516000" expanded="true" signature="8388:8406" placeholder="SELECT * FRO..note..." />
+                    <marker date="1436359516000" expanded="true" signature="8472:8490" placeholder="SELECT * FRO..note..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/index.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-2.8888888" vertical-offset="48" max-vertical-offset="864">
-                  <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="65" />
+          <file leaf-file-name="evernoteDB.members" pinned="false" current-in-tab="false">
+            <entry file="dbDummy://dbtable:/f34d2baa/456dba32-b01f-42fb-af42-1754883ade8e/evernoteDB..members">
+              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+                <state>
+                  <filtering enabled="true" />
+                </state>
+              </provider>
+              <provider editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="162">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -122,7 +128,7 @@
             <entry file="file://$PROJECT_DIR$/src/deleteData.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="900">
-                  <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+                  <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <marker date="1436350334000" expanded="true" signature="991:1034" placeholder="DELETE FROM ..." />
@@ -132,6 +138,19 @@
                     <marker date="1436350334000" expanded="true" signature="1071:1106" placeholder="DELETE FROM ..." />
                     <marker date="1436350334000" expanded="true" signature="1357:1390" placeholder="DELETE FROM ..." />
                     <marker date="1436350334000" expanded="true" signature="1357:1405" placeholder="DELETE FROM ..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="deleteAccount.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/deleteAccount.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="900">
+                  <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <marker date="1436358898000" expanded="true" signature="997:1047" placeholder="DELETE FROM ..." />
                   </folding>
                 </state>
               </provider>
@@ -152,16 +171,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MySQL - evernoteDB@localhost" pinned="false" current-in-tab="false">
-            <entry file="dbDummy://db-console:/f34d2baa/456dba32-b01f-42fb-af42-1754883ade8e/">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -169,8 +178,8 @@
           <file leaf-file-name="init.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/js/init.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8455882" vertical-offset="426" max-vertical-offset="1296">
-                  <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+                <state vertical-scroll-proportion="0.2867647" vertical-offset="0" max-vertical-offset="1386">
+                  <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
                   <folding />
                 </state>
               </provider>
@@ -194,7 +203,6 @@
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/newNote.jsp" />
         <option value="dbtable:/f34d2baa/456dba32-b01f-42fb-af42-1754883ade8e/evernoteDB..note" />
-        <option value="dbtable:/f34d2baa/456dba32-b01f-42fb-af42-1754883ade8e/evernoteDB..members" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/js/delete.js" />
         <option value="$PROJECT_DIR$/web/js/deleterow.js" />
@@ -202,11 +210,13 @@
         <option value="$PROJECT_DIR$/src/newNote.java" />
         <option value="db-console:/f34d2baa/456dba32-b01f-42fb-af42-1754883ade8e/" />
         <option value="$PROJECT_DIR$/web/registration.jsp" />
-        <option value="$PROJECT_DIR$/src/deleteData.java" />
-        <option value="$PROJECT_DIR$/web/css/styleShit.css" />
         <option value="$PROJECT_DIR$/web/newNote.jsp" />
-        <option value="$PROJECT_DIR$/web/js/init.js" />
+        <option value="dbtable:/f34d2baa/456dba32-b01f-42fb-af42-1754883ade8e/evernoteDB..members" />
+        <option value="$PROJECT_DIR$/src/deleteData.java" />
+        <option value="$PROJECT_DIR$/src/deleteAccount.java" />
         <option value="$PROJECT_DIR$/web/userNotes.jsp" />
+        <option value="$PROJECT_DIR$/web/js/init.js" />
+        <option value="$PROJECT_DIR$/web/css/styleShit.css" />
       </list>
     </option>
   </component>
@@ -864,12 +874,12 @@
       <workItem from="1435947931069" duration="1211000" />
       <workItem from="1435950380358" duration="56203000" />
       <workItem from="1436139155885" duration="4315000" />
-      <workItem from="1436265636739" duration="21269000" />
+      <workItem from="1436265636739" duration="23561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165531000" />
+    <option name="totallyTimeSpent" value="167823000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -918,8 +928,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16186693" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="1461" y="264" width="1878" height="191" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16683218" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21529412" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07348243" sideWeight="0.67184466" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.096354164" sideWeight="0.32718447" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.102768905" sideWeight="0.671801" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.102768905" sideWeight="0.3270142" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -998,14 +1008,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/css/styleShit.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="900">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/createAccount.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="690">
@@ -1054,8 +1056,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="720">
           <caret line="36" column="67" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
           <folding>
-            <marker date="1436357419000" expanded="true" signature="8070:8088" placeholder="SELECT * FRO..note..." />
-            <marker date="1436357419000" expanded="true" signature="8154:8172" placeholder="SELECT * FRO..note..." />
+            <marker date="1436359516000" expanded="true" signature="8289:8310" placeholder="SELECT * FRO..members..." />
+            <marker date="1436359516000" expanded="true" signature="8388:8406" placeholder="SELECT * FRO..note..." />
+            <marker date="1436359516000" expanded="true" signature="8472:8490" placeholder="SELECT * FRO..note..." />
           </folding>
         </state>
       </provider>
@@ -1120,8 +1123,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="720">
           <caret line="36" column="67" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
           <folding>
-            <marker date="1436357419000" expanded="true" signature="8070:8088" placeholder="SELECT * FRO..note..." />
-            <marker date="1436357419000" expanded="true" signature="8154:8172" placeholder="SELECT * FRO..note..." />
+            <marker date="1436359516000" expanded="true" signature="8289:8310" placeholder="SELECT * FRO..members..." />
+            <marker date="1436359516000" expanded="true" signature="8388:8406" placeholder="SELECT * FRO..note..." />
+            <marker date="1436359516000" expanded="true" signature="8472:8490" placeholder="SELECT * FRO..note..." />
           </folding>
         </state>
       </provider>
@@ -1255,18 +1259,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/f34d2baa/456dba32-b01f-42fb-af42-1754883ade8e/evernoteDB..members">
-      <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="537">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="702">
@@ -1318,13 +1310,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/newNote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5273885" vertical-offset="90" max-vertical-offset="1044">
-          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/registration.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22906403" vertical-offset="102" max-vertical-offset="972">
@@ -1343,10 +1328,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/styleShit.css">
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="936">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.09885932" vertical-offset="48" max-vertical-offset="864">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/newNote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50735295" vertical-offset="90" max-vertical-offset="1044">
+          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deleteData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="900">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1436350334000" expanded="true" signature="991:1034" placeholder="DELETE FROM ..." />
+            <marker date="1436350334000" expanded="true" signature="991:1034" placeholder="DELETE FROM ..." />
+            <marker date="1436350334000" expanded="true" signature="991:1034" placeholder="DELETE FROM ..." />
+            <marker date="1436350334000" expanded="true" signature="1071:1091" placeholder="DELETE FROM ..." />
+            <marker date="1436350334000" expanded="true" signature="1071:1106" placeholder="DELETE FROM ..." />
+            <marker date="1436350334000" expanded="true" signature="1357:1390" placeholder="DELETE FROM ..." />
+            <marker date="1436350334000" expanded="true" signature="1357:1405" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deleteAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="900">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1436358898000" expanded="true" signature="997:1047" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/f34d2baa/456dba32-b01f-42fb-af42-1754883ade8e/evernoteDB..members">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1364,9 +1398,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2867647" vertical-offset="0" max-vertical-offset="1386">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/newNote.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.222222" vertical-offset="345" max-vertical-offset="1134">
+        <state vertical-scroll-proportion="-22.0" vertical-offset="0" max-vertical-offset="1134">
           <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
           <folding>
             <marker date="1436356286000" expanded="true" signature="1039:1115" placeholder="INSERT INTO ..." />
@@ -1377,47 +1419,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8888888" vertical-offset="48" max-vertical-offset="864">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/deleteData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="900">
-          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1436350334000" expanded="true" signature="991:1034" placeholder="DELETE FROM ..." />
-            <marker date="1436350334000" expanded="true" signature="991:1034" placeholder="DELETE FROM ..." />
-            <marker date="1436350334000" expanded="true" signature="991:1034" placeholder="DELETE FROM ..." />
-            <marker date="1436350334000" expanded="true" signature="1071:1091" placeholder="DELETE FROM ..." />
-            <marker date="1436350334000" expanded="true" signature="1071:1106" placeholder="DELETE FROM ..." />
-            <marker date="1436350334000" expanded="true" signature="1357:1390" placeholder="DELETE FROM ..." />
-            <marker date="1436350334000" expanded="true" signature="1357:1405" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8455882" vertical-offset="426" max-vertical-offset="1296">
-          <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/userNotes.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15589353" vertical-offset="2469" max-vertical-offset="3942">
-          <caret line="144" column="67" selection-start-line="144" selection-start-column="67" selection-end-line="144" selection-end-column="165" />
+        <state vertical-scroll-proportion="-16.555555" vertical-offset="777" max-vertical-offset="4104">
+          <caret line="68" column="121" selection-start-line="68" selection-start-column="121" selection-end-line="68" selection-end-column="121" />
           <folding>
-            <marker date="1436357419000" expanded="true" signature="8070:8088" placeholder="SELECT * FRO..note..." />
-            <marker date="1436357419000" expanded="true" signature="8154:8172" placeholder="SELECT * FRO..note..." />
+            <marker date="1436359516000" expanded="true" signature="8289:8310" placeholder="SELECT * FRO..members..." />
+            <marker date="1436359516000" expanded="true" signature="8388:8406" placeholder="SELECT * FRO..note..." />
+            <marker date="1436359516000" expanded="true" signature="8472:8490" placeholder="SELECT * FRO..note..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/styleShit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75735295" vertical-offset="246" max-vertical-offset="1134">
+          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

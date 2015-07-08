@@ -52,7 +52,7 @@
                                             <span class="caret"></span></button>
 
                                                 <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                                                    <li role="presentation"><a role="menuitem" tabindex="-1">Meeting</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" id="meeting">Meeting</a></li>
                                                          <li role="presentation" class="divider"></li>
                                                     <li role="presentation"><a role="menuitem" tabindex="-1" id="note">Note</a></li>
                                                          <li role="presentation" class="divider"></li>
@@ -117,6 +117,7 @@
                                     <td>note</td>
                                     <td>time</td>
                                     <td></td>
+                                    <td></td>
 
                                 </tr>
                                     <%
@@ -129,6 +130,9 @@
 
                                                     Statement st = con.createStatement();
                                                     ResultSet rs;
+                                            Statement statement = con.createStatement();
+                                            ResultSet resultSet;
+                                            resultSet = statement.executeQuery("SELECT * FROM members");
                                                     rs = st.executeQuery("SELECT * FROM note");
 //                                            String query = "SELECT * FROM note";
 //                                            PreparedStatement statement = con.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
@@ -141,7 +145,8 @@
                                                                 <td><%=rs.getString(1) %></td>
                                                                 <td id="noteName"><%=rs.getString(2) %></td>
                                                                 <td ><%=rs.getString(3)%> <%=rs.getString(6)%></td>
-                                                                <td><i class="fa fa-pencil-square-o" data-toggle="modal" data-target=".bs-example-modal-lg"></i></td>
+                                                                <%--<td><i class="fa fa-pencil-square-o" data-toggle="modal" data-target=".bs-example-modal-lg"></i></td>--%>
+                                                                <td><i class="fa fa-pencil-square-o"></i></td>
                                                                 <%--&lt;%&ndash;<td>&ndash;%&gt;--%>
                                                                     <%--&lt;%&ndash;<a href=deleteData?id=<%=rs.getString(1) %>><button type="button" class="btn btn-success" data-toggle="modal" data-target=".bs-example-modal-lg" id="btnCreateNewNotee">CREATE NEW NOTE</button></a>&ndash;%&gt;--%>
                                                                 <%--&lt;%&ndash;<div class="modal fade bs-example-modal-lg" tabindex="-1">&ndash;%&gt;--%>
@@ -184,29 +189,34 @@
                                                                 <a href=deleteData?id=<%=rs.getInt(4)%>><button onclick="deleteRow()" type="button" class="close" data-dismiss="modal">&times;</button></a>
                                                                 </td>
                                                             </tr>
-                                <% } %>
+                                <%  }
+                                    resultSet.close();
+                                    rs.close();
+                                    st.close();
+                                    con.close();
+                                }
+                                catch(ClassNotFoundException e)
+                                {
+                                    writer.println("Couldn't load database driver: " + e.getMessage());
+                                }
+                                catch(SQLException e)
+                                {
+                                    writer.println("SQLException caught: " + e.getMessage());
+                                }
+                                catch (Exception e)
+                                {
+                                    writer.println(e);
+                                }
+                                %>
+                                <%--<%--%>
+                                    <%--}--%>
+                                        <%--while (resultSet.next()) {--%>
+                                <%--%>--%>
                              </table>
                         </div>
-                <a href="index.jsp"<button type="button" onclick="Logout()" class="btn btn-danger" id="btnLogout">Logout</button> </a>
-                <a href=""<button type="button" onclick="DeleteAccount()" class="btn btn-danger" id="btnDelete">DeleteAccount</button> </a>
-                            <%
-                                rs.close();
-                                st.close();
-                                con.close();
-                            }
-                            catch(ClassNotFoundException e)
-                            {
-                                writer.println("Couldn't load database driver: " + e.getMessage());
-                            }
-                            catch(SQLException e)
-                            {
-                                writer.println("SQLException caught: " + e.getMessage());
-                            }
-                            catch (Exception e)
-                            {
-                                writer.println(e);
-                            }
-                            %>
+                <a href="index.jsp"<button type="button" onclick="Logout()" class="btn btn-warning" id="btnLogout">Logout</button> </a>
+                <a href="" ><button type="button" onclick="DeleteAccount()" class="btn btn-danger" id="btnDelete">DeleteAccount</button> </a>
+
                         </form>
                 </body>
           </html>

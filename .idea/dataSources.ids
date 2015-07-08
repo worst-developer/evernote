@@ -10,6 +10,8 @@
     <table name="members" schema="" catalog="evernoteDB" type="TABLE">
       <column name="userEmail" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
       <column name="userPass" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="userID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <primary-key name="PRIMARY" columns="userID"/>
     </table>
     <table name="note" schema="" catalog="evernoteDB" type="TABLE">
       <column name="noteName" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
